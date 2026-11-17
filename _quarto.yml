@@ -9,11 +9,14 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
-
+      - href: Grand_County.qmd
+        text: Grand County
+      - href: Beetles.qmd
+        text: Beetle Outbreaks
 format:
   html:
     theme:
-      - cosmo
+      - flatly
       - brand
     css: styles.css
     toc: true

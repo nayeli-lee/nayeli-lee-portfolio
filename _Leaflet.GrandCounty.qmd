@@ -1,0 +1,55 @@
+---
+title: "Beetle Outbreaks in Grand County, 1997-2025"
+---
+
+## Why this page
+
+The Grand County project on the previous page was for NR 518 regarding wildfire risk. I kept getting pulled toward the beetles instead: their life cycles, and how they depend on the tree hosts they eventually kill. I ran my own project on how much beetle damage Grand County has endured over time. Everything on this page is separate from class work and my own work.
+
+## The question
+
+How has bark beetle damage in Grand County changed over time? Which beetles were responsible, when did each one peak, and has there been any resurgence?
+
+## The Data
+
+I used the aerial detection surveys from the USDA Forest Service, Forest health Protection (Region 2). Each year, surveyors fly over the forest and map the area. I clipped the damage polygons to the Grand County boundary (TIGER) in QGIS, then summed the acres by years and beetle type in R. The beetles were narrowed to the most damaging: mountain pine beetle, spruce beetle, and western balsam bark beetle.\
+\
+It should be noted these are estimates which are assessed by eye from the air.
+
+## Beetle Damage Across the Years
+
+Bark beetle damage in Grand County came in waves. Mountain pine beetle damage grew from about 3,187 acres in 1997 to a peak of about 288,000 acres in 2006. Spruce beetle took over 2011 and affected about 15,000 to 19,000 acres a year from 2013 through 2016. By 2025, the mapped damage dropped to about 335 acres total.\
+\
+![](beetle_chart.png)
+
+## What I found
+
+```{r}
+#| echo: false
+#| message: false
+
+library (tidyverse)
+library (sf)
+library (leaflet)
+
+time <- st_read("data/beetles_clipped.gpkg", quiet = TRUE) |> 
+st_transform (4326) |> 
+  mutate (time_period = cut (SURVEY_YEAR, c(1996,2000,2005,2010,2015,2020,2025), 
+  labels = c("1997-2000","2001-2005", "2006-2010", "2011-2015","2016-2020","2021-2025"))) |>   
+  group_by (time_period) |> 
+  summarize()
+
+county <- st_read("data/grand_county.gpkg", quiet = TRUE) |>
+  st_transform(4326)
+
+color_palette <- colorFactor(c("#FFE08A", "#F6C85F", "#EE9B3F", "#D1495B", "#8E2C57", "#4B2142"), time$time_period)
+
+leaflet(time) |> 
+  addProviderTiles("Esri.NatGeoWorldMap") |> 
+  addPolygons(fillColor = ~color_palette(time_period), fillOpacity = .9,color = "black", weight = 0.4, opacity = 1,group = ~time_period) |>
+  addPolygons( data = county, fill = FALSE,color = "black", weight = 2) |>  
+  addLayersControl(overlayGroups = levels(time$time_period)) |> 
+  addLegend(pal = color_palette, values = ~time_period, title = "Years surveyed", opacity = 1)
+```
+
+## Limits Tools and data

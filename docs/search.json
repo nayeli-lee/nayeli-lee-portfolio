@@ -2,9 +2,79 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "nayeli-lee-portfolio",
+    "title": "Nayeli",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "I’m an entry level environmental and sustainability professional with field and lab experience in data collection, GIS mapping, and vegetation monitoring. I’ve contributed data to a peer-reviewed publication on invasive species detection.\nI’m completing my Professional Science Master’s in Ecosystem Science and Sustainability at Colorado State University, working toward a career in sustainability, with the end goal of Carbon or ESG analyst. I’m interested in water and carbon, with special focus in habitat restoration and wetlands.\nOutside of coursework, I volunteer with the Watershed Enhancement Team, led by our tireless leader, Tiffany Swiderski. The team’s work includes invasive species removal, fire mitigation, and watershed clean-ups."
+  },
+  {
+    "objectID": "index.html#skills",
+    "href": "index.html#skills",
+    "title": "Nayeli",
+    "section": "Skills",
+    "text": "Skills\n\nField and data collection\nVegetation monitoring\nGIS mapping (QGIS)\nR\nSpanish (native speaker)"
+  },
+  {
+    "objectID": "index.html#publication",
+    "href": "index.html#publication",
+    "title": "Nayeli",
+    "section": "Publication",
+    "text": "Publication\nMiddleton, E. G., & Lee, N. (2026). Detecting Thrips parvispinus (Thysanoptera: Thripidae) in retail plant stores in Southern California. Journal of Insect Science, 26(5), ieag105. https://doi.org/10.1093/jisesa/ieag105"
+  },
+  {
+    "objectID": "Beetles.html",
+    "href": "Beetles.html",
+    "title": "Beetle Outbreaks in Grand County, 1997-2025",
+    "section": "",
+    "text": "The Grand County project on the previous page was for NR 518 regarding wildfire risk. I kept getting pulled toward the beetles instead: their life cycles, and how they depend on the tree hosts they eventually kill. I ran my own project on how much beetle damage Grand County has endured over time. Everything on this page is separate from class work and my own work."
+  },
+  {
+    "objectID": "Beetles.html#why-this-page",
+    "href": "Beetles.html#why-this-page",
+    "title": "Beetle Outbreaks in Grand County, 1997-2025",
+    "section": "",
+    "text": "The Grand County project on the previous page was for NR 518 regarding wildfire risk. I kept getting pulled toward the beetles instead: their life cycles, and how they depend on the tree hosts they eventually kill. I ran my own project on how much beetle damage Grand County has endured over time. Everything on this page is separate from class work and my own work."
+  },
+  {
+    "objectID": "Beetles.html#the-question",
+    "href": "Beetles.html#the-question",
+    "title": "Beetle Outbreaks in Grand County, 1997-2025",
+    "section": "The question",
+    "text": "The question\nHow has bark beetle damage in Grand County changed over time? Which beetles were responsible, when did each one peak, and has there been any resurgence?"
+  },
+  {
+    "objectID": "Beetles.html#the-data",
+    "href": "Beetles.html#the-data",
+    "title": "Beetle Outbreaks in Grand County, 1997-2025",
+    "section": "The Data",
+    "text": "The Data\nI used the aerial detection surveys from the USDA Forest Service, Forest health Protection (Region 2). Each year, surveyors fly over the forest and map the area. I clipped the damage polygons to the Grand County boundary (TIGER) in QGIS, then summed the acres by years and beetle type in R. The beetles were narrowed to the most damaging: mountain pine beetle, spruce beetle, and western balsam bark beetle."
+  },
+  {
+    "objectID": "Beetles.html#beetle-damage-across-the-years",
+    "href": "Beetles.html#beetle-damage-across-the-years",
+    "title": "Beetle Outbreaks in Grand County, 1997-2025",
+    "section": "Beetle Damage Across the Years",
+    "text": "Beetle Damage Across the Years\nBark beetle damage in Grand County came in waves. Mountain pine beetle damage grew from about 3,187 acres in 1997 to a peak of about 288,000 acres in 2006. Spruce beetle took over 2011 and affected about 15,000 to 19,000 acres a year from 2013 through 2016. By 2025, the mapped damage dropped to about 335 acres total."
+  },
+  {
+    "objectID": "Beetles.html#what-i-found",
+    "href": "Beetles.html#what-i-found",
+    "title": "Beetle Outbreaks in Grand County, 1997-2025",
+    "section": "What I found",
+    "text": "What I found\n\n\n\n\n\n\nDamage came in waves. It started small in 1997 with about 3,200 acres, and the mountain pine beetle spread, peaking in 2006 at about 288,000 acres in a single year. From 2011 onward, the spruce beetle took over, but at a smaller scale: about 15,000 to 19,000 acres a year from 2013 to 2016. Spruce beetle had one rebound in 2018, at about 16,600 acres, but mostly declined. Current data would suggest there are low levels of major beetles, with the exception of the western balsam bark beetle which has shown fairly consistent damage."
+  },
+  {
+    "objectID": "Beetles.html#limits",
+    "href": "Beetles.html#limits",
+    "title": "Beetle Outbreaks in Grand County, 1997-2025",
+    "section": "Limits",
+    "text": "Limits\nAerial surveys map damage by eye from the air, so they can show patterns, but are not exact.\nSurvey conditions can change year to year, so changes may reflect on the survey, not the beetles."
+  },
+  {
+    "objectID": "Beetles.html#tools-and-data",
+    "href": "Beetles.html#tools-and-data",
+    "title": "Beetle Outbreaks in Grand County, 1997-2025",
+    "section": "Tools and data",
+    "text": "Tools and data\nTools: QGIS and R\nData sources: U.S. Census TIGER 2023 (county boundary).\nBasemap: Esri.\nBeetle data: USDA Forest Service (2025), Forest Health Protection and its partners. (2025). Insect and Disease Detection Survey (IDS), CONUS Region 2, all years [Data set]. Retrieved on September 8th, 2026, from https://www.fs.usda.gov/science-technology/data-tools-products/fhp-mapping-reporting/detection-surveys"
   },
   {
     "objectID": "about.html",
@@ -12,5 +82,40 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "Grand_County.html",
+    "href": "Grand_County.html",
+    "title": "Beetle-Killed Forest and Wildfire Risk, Grand County, Colorado",
+    "section": "",
+    "text": "Map by Nayeli, originally made for NR 518: Climate Impacts and Risk Assessments group project and refined here. Colorado State University, Fall 2026."
+  },
+  {
+    "objectID": "Grand_County.html#the-question",
+    "href": "Grand_County.html#the-question",
+    "title": "Beetle-Killed Forest and Wildfire Risk, Grand County, Colorado",
+    "section": "The Question",
+    "text": "The Question\nWhere are residential communities in Grand County exposed to wildfire fuels in beetle-killed forest, and which communities should a vulnerability assessment focus on?"
+  },
+  {
+    "objectID": "Grand_County.html#study-area",
+    "href": "Grand_County.html#study-area",
+    "title": "Beetle-Killed Forest and Wildfire Risk, Grand County, Colorado",
+    "section": "Study Area",
+    "text": "Study Area\nGrand County covers 1,846 square miles and has about 16,500 residents. About 70% of the land is federally owned. The county’s wildfire protection plan (CWPP) maps 30 communities. I narrowed these to three that sit in different parts of the county, so their hazards differ: Big Horn Park, Southern Grand Lake, and Sunset Ridge."
+  },
+  {
+    "objectID": "Grand_County.html#what-i-found",
+    "href": "Grand_County.html#what-i-found",
+    "title": "Beetle-Killed Forest and Wildfire Risk, Grand County, Colorado",
+    "section": "What I Found",
+    "text": "What I Found\nLodgepole pine covers 17.9% of Southern Grand Lake, 13.6% of Sunset Ridge, and 6.3% of Big Horn Park, using LANDFIRE fuel data. The fuel mixes differ between the communities as a whole."
+  },
+  {
+    "objectID": "Grand_County.html#tools-and-data",
+    "href": "Grand_County.html#tools-and-data",
+    "title": "Beetle-Killed Forest and Wildfire Risk, Grand County, Colorado",
+    "section": "Tools and data",
+    "text": "Tools and data\nMap by Nayeli, 2026, revised from my NR 518 coursework.\nTools: QGIS and R\nData sources: LANDFIRE 2026, U.S. Census TIGER 2023, and Grand County’s CWPP (SWCA, 2023).\nBeetle data: USDA Forest Service (2025), Forest Health Protection and its partners. (2025). Insect and Disease Detection Survey (IDS), CONUS Region 2, all years [Data set]. Retrieved on September 8th, 2026, from https://www.fs.usda.gov/science-technology/data-tools-products/fhp-mapping-reporting/detection-surveys"
   }
 ]
