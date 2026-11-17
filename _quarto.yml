@@ -8,15 +8,17 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
       - href: Grand_County.qmd
         text: Grand County
       - href: Beetles.qmd
         text: Beetle Outbreaks
 format:
   html:
+    grid:
+      body-width: 1100px
+      margin-width: 250px
     theme:
-      - flatly
+      - sandstone
       - brand
     css: styles.css
     toc: true

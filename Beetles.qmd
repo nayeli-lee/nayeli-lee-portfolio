@@ -2,26 +2,29 @@
 title: "Beetle Outbreaks in Grand County, 1997-2025"
 ---
 
-## Why this page
+### Why this page
 
 The Grand County project on the previous page was for NR 518 regarding wildfire risk. I kept getting pulled toward the beetles instead: their life cycles, and how they depend on the tree hosts they eventually kill. I ran my own project on how much beetle damage Grand County has endured over time. Everything on this page is separate from class work and my own work.
 
-## The question
+### The Question
 
 How has bark beetle damage in Grand County changed over time? Which beetles were responsible, when did each one peak, and has there been any resurgence?
 
-## The Data
+### The Data
 
 I used the aerial detection surveys from the USDA Forest Service, Forest health Protection (Region 2). Each year, surveyors fly over the forest and map the area. I clipped the damage polygons to the Grand County boundary (TIGER) in QGIS, then summed the acres by years and beetle type in R. The beetles were narrowed to the most damaging: mountain pine beetle, spruce beetle, and western balsam bark beetle.
 
-## Beetle Damage Across the Years
+### Beetle Damage Across the Years
 
 Bark beetle damage in Grand County came in waves. Mountain pine beetle damage grew from about 3,187 acres in 1997 to a peak of about 288,000 acres in 2006. Spruce beetle took over 2011 and affected about 15,000 to 19,000 acres a year from 2013 through 2016. By 2025, the mapped damage dropped to about 335 acres total.\
 \
 ![](beetle_chart.png)
 
-## What I found
+### What I found
 
+::: {style="margin: 0.5rem 0 1.5rem; font-size: 0.9rem; text-align: right;"}
+ *Change the time period with the toggle in the upper right-hand corner. Map created with R and the leaflet package.*
+:::
 ```{r}
 #| echo: false
 #| message: false
@@ -50,20 +53,18 @@ leaflet(time) |>
   addLegend(pal = color_palette, values = ~time_period, title = "Years surveyed", opacity = 1)
 ```
 
+::: {style="margin-top: 1.5rem;"}
 Damage came in waves. It started small in 1997 with about 3,200 acres, and the mountain pine beetle spread, peaking in 2006 at about 288,000 acres in a single year. From 2011 onward, the spruce beetle took over, but at a smaller scale: about 15,000 to 19,000 acres a year from 2013 to 2016. Spruce beetle had one rebound in 2018, at about 16,600 acres, but mostly declined. Current data would suggest there are low levels of major beetles, with the exception of the western balsam bark beetle which has shown fairly consistent damage.
-
-## Limits
+:::
+### Limits
 
 Aerial surveys map damage by eye from the air, so they can show patterns, but are not exact.
 
 Survey conditions can change year to year, so changes may reflect on the survey, not the beetles.
 
-## Tools and data
+### Tools and data
 
-Tools: QGIS and R
-
-Data sources: U.S. Census TIGER 2023 (county boundary).
-
-Basemap: Esri.
-
-Beetle data: USDA Forest Service (2025), Forest Health Protection and its partners. (2025). Insect and Disease Detection Survey (IDS), CONUS Region 2, all years \[Data set\]. Retrieved on September 8th, 2026, from <https://www.fs.usda.gov/science-technology/data-tools-products/fhp-mapping-reporting/detection-surveys>
+**Tools:** QGIS and R\
+**County boundary:** U.S. Census Bureau, TIGER 2023\
+**Basemap:** Esri\
+**Beetle data:** USDA Forest Service (2025). Forest Health Protection and its partners. Insect and Disease Detection Survey (IDS), CONUS Region 2, all years \[Data set\]. Retrieved September 8, 2026, from <https://www.fs.usda.gov/science-technology/data-tools-products/fhp-mapping-reporting/detection-surveys>

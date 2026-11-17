@@ -1,12 +1,24 @@
 ---
-title: "Nayeli"
+pagetitle: "Nayeli Lee"
+toc: false
+page-layout: full
+format:
+  html:
+    grid:
+      sidebar-width: 0px
+      margin-width: 0px
+      gutter-width: 1rem
 about:
   template: jolla
-  links:
-  - icon: linkedin
-    text: LinkedIn
-    href: www.linkedin.com/in/nayelilee
 ---
+
+::: {style="text-align: center; margin-top: -7rem;"}
+# Nayeli Lee [<i class="bi bi-linkedin"></i>](https://www.linkedin.com/in/nayelilee)
+:::
+
+![](marsh_banner.jpg)
+
+### Bio
 
 I'm an entry level environmental and sustainability professional with field and lab experience in data collection, GIS mapping, and vegetation monitoring. I've contributed data to a peer-reviewed publication on invasive species detection.
 
@@ -14,18 +26,8 @@ I'm completing my Professional Science Master's in Ecosystem Science and Sustain
 
 Outside of coursework, I volunteer with the Watershed Enhancement Team, led by our tireless leader, Tiffany Swiderski. The team's work includes invasive species removal, fire mitigation, and watershed clean-ups.
 
-## Skills
+### Publication
 
-- Field and data collection
-
-- Vegetation monitoring
-
-- GIS mapping (QGIS)
-
-- R
-
-- Spanish (native speaker)
-
-## Publication
-
-Middleton, E. G., & Lee, N. (2026). Detecting Thrips parvispinus (Thysanoptera: Thripidae) in retail plant stores in Southern California. Journal of Insect Science, 26(5), ieag105. <https://doi.org/10.1093/jisesa/ieag105>
+::: apa
+Middleton, E. G., & Lee, N. (2026). Detecting *Thrips parvispinus* (Thysanoptera: Thripidae) in retail plant stores in Southern California. *Journal of Insect Science*, *26*(5), Article ieag105. <https://doi.org/10.1093/jisesa/ieag105>
+:::

@@ -1,1 +1,42 @@
 /* css styles */
+
+/* centered titles */
+.quarto-title h1.title { text-align: center; }
+
+/* Filling out the nav bar*/
+.navbar-brand { font-size: 1.5rem; }
+.navbar-nav .nav-link { font-size: 1.1rem; }
+.navbar { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+
+/* tighter page edges */
+main.content { padding-left: 2rem; padding-right: 2rem; }
+
+/* earthy link colors */
+#quarto-content a { color: #7a5c3a; }
+#quarto-content a:hover { color: #4f3a22; }
+
+body { background-color: #f4efe6; }
+
+/* Skills text stays centered */
+#quarto-content .skills p { text-align: center; }
+
+/* APA reference: left-aligned with a hanging indent */
+#quarto-content .apa p { text-align: left; padding-left: 0.5in; text-indent: -0.5in; }
+
+/* left-align text */
+#quarto-content p,
+#quarto-content h2,
+#quarto-content h3 { text-align: left; }
+#quarto-content h1 { text-align: center; font-size: 2rem; }
+#quarto-content h1 a { font-size: 1.5rem; margin-left: 0.5rem; }
+
+
+
+/* LinkedIn link under the name */
+#quarto-content .linkedin p { text-align: center; margin-bottom: 1rem; }
+
+#quarto-content p { margin-bottom: 0.5rem; }
+
+@media (max-width: 991px) {
+  .navbar-brand { font-size: 1.1rem; }
+}
